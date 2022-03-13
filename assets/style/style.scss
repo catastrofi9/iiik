@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;700&display=swap");
+@font-face {
+  font-family: heading;
+  src: url("../ethnocentric rg.otf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: black;
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: white;
+  width: 0px;
+}
+
+.heading {
+  font-family: heading;
+  color: white;
+  font-size: 70px;
+  @media (max-width: 600px) {
+    font-size: 40px;
+  }
+}
+
+.container {
+  max-width: 2500px;
+  padding: 0px 5%;
+}
+
+.robots {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  .logo {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 100px;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@import "scss/nav";
+@import "scss/hero";
+@import "scss/about";
+@import "scss/roadmap";
